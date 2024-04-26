@@ -14,7 +14,7 @@
 	<name>teste-open-feign</name>
 	<description>Teste do Open Feign</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>11</java.version>
 		<spring-cloud.version>2020.0.4</spring-cloud.version>
 	</properties>
 	<dependencies>
@@ -95,6 +95,36 @@
 							<cleanPackageDirectories>false</cleanPackageDirectories>
 							<generateDirectory>${project.build.directory}/generated-sources/dataaccess</generateDirectory>
 							<generatePackage>br.org.rodnet.dataaccess.stub</generatePackage>
+						</configuration>
+					</execution>
+					<execution>
+						<id>matrixdi</id>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+						<configuration>
+							<schemaDirectory>${project.basedir}/src/main/resources/schema/dataaccess</schemaDirectory>
+							<schemaIncludes>
+								<include>MatrixDIService.wsdl</include>
+							</schemaIncludes>
+							<cleanPackageDirectories>false</cleanPackageDirectories>
+							<generateDirectory>${project.build.directory}/generated-sources/matrixdi</generateDirectory>
+							<generatePackage>cl.gascox.integracion.app.wsclients.wsmatrixdi</generatePackage>
+						</configuration>
+					</execution>
+					<execution>
+						<id>wswebpaygasco</id>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+						<configuration>
+							<schemaDirectory>${project.basedir}/src/main/resources/schema/dataaccess</schemaDirectory>
+							<schemaIncludes>
+								<include>WebPayGascoServ.wsdl</include>
+							</schemaIncludes>
+							<cleanPackageDirectories>false</cleanPackageDirectories>
+							<generateDirectory>${project.build.directory}/generated-sources/wswebpaygasco</generateDirectory>
+							<generatePackage>cl.gascox.integracion.app.wsclients.wswebpaygasco</generatePackage>
 						</configuration>
 					</execution>
 				</executions>
