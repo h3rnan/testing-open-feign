@@ -103,12 +103,12 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<schemaDirectory>${project.basedir}/src/main/resources/schema/dataaccess</schemaDirectory>
+							<schemaDirectory>${project.basedir}/src/main/resources/schema/gasco/matrixdi</schemaDirectory>
 							<schemaIncludes>
 								<include>MatrixDIService.wsdl</include>
 							</schemaIncludes>
 							<cleanPackageDirectories>false</cleanPackageDirectories>
-							<generateDirectory>${project.build.directory}/generated-sources/matrixdi</generateDirectory>
+							<generateDirectory>${project.build.directory}/generated-sources/gasco/matrixdi</generateDirectory>
 							<generatePackage>cl.gascox.integracion.app.wsclients.wsmatrixdi</generatePackage>
 						</configuration>
 					</execution>
@@ -118,12 +118,12 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<schemaDirectory>${project.basedir}/src/main/resources/schema/dataaccess</schemaDirectory>
+							<schemaDirectory>${project.basedir}/src/main/resources/schema/gasco/webpay</schemaDirectory>
 							<schemaIncludes>
 								<include>WebPayGascoServ.wsdl</include>
 							</schemaIncludes>
 							<cleanPackageDirectories>false</cleanPackageDirectories>
-							<generateDirectory>${project.build.directory}/generated-sources/wswebpaygasco</generateDirectory>
+							<generateDirectory>${project.build.directory}/generated-sources/gasco/webpay</generateDirectory>
 							<generatePackage>cl.gascox.integracion.app.wsclients.wswebpaygasco</generatePackage>
 						</configuration>
 					</execution>
