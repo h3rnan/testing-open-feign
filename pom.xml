@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>teste-open-feign</artifactId>
+	<artifactId>testing-open-feign</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>teste-open-feign</name>
-	<description>Teste do Open Feign</description>
+	<name>testing-open-feign</name>
+	<description>Testing Open Feign</description>
 	<properties>
 		<java.version>11</java.version>
 		<spring-cloud.version>2020.0.4</spring-cloud.version>
