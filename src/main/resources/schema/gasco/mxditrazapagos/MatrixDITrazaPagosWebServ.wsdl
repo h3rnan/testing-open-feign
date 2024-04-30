@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://webservice.gasco.cl/WSMatrixDI/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s1="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s2="urn:sap-com:document:sap:rfc:functions" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://webservice.gasco.cl/WSMatrixDI/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://webservice.gasco.cl/WSMatrixDI/">
+      <s:import namespace="urn:sap-com:document:sap:soap:functions:mc-style" />
+      <s:element name="ZzrfcmxdiTpIntAbonoFactura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="param" type="s1:ZzrfcmxdiTpIntAbonoFactura" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZzrfcmxdiTpIntAbonoFacturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZzrfcmxdiTpIntAbonoFacturaResult" type="s1:ZzrfcmxdiTpIntAbonoFacturaResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZzrfcmxdiTpIntCartolaDiV2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="param" type="s1:ZzrfcmxdiTpIntCartolaDiV2" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZzrfcmxdiTpIntCartolaDiV2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZzrfcmxdiTpIntCartolaDiV2Result" type="s1:ZzrfcmxdiTpIntCartolaDiV2Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZzrfcmxdiTpIntDoctoFi">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="param" type="s1:ZzrfcmxdiTpIntDoctoFi" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZzrfcmxdiTpIntDoctoFiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZzrfcmxdiTpIntDoctoFiResult" type="s1:ZzrfcmxdiTpIntDoctoFiResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZzrfcmxdiTpIntPagoDj">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="param" type="s1:ZzrfcmxdiTpIntPagoDj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZzrfcmxdiTpIntPagoDjResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZzrfcmxdiTpIntPagoDjResult" type="s1:ZzrfcmxdiTpIntPagoDjResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZzrfcmxdiTpIntPedidoV2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="param" type="s1:ZzrfcmxdiTpIntPedidoV2" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZzrfcmxdiTpIntPedidoV2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZzrfcmxdiTpIntPedidoV2Result" type="s1:ZzrfcmxdiTpIntPedidoV2Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZzrfcmxdiTpObtToken">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="param" type="s1:ZzrfcmxdiTpObtToken" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZzrfcmxdiTpObtTokenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZzrfcmxdiTpObtTokenResult" type="s1:ZzrfcmxdiTpObtTokenResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZzrfcmxdiTpPagAbonoFactura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="param" type="s1:ZzrfcmxdiTpPagAbonoFactura" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZzrfcmxdiTpPagAbonoFacturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZzrfcmxdiTpPagAbonoFacturaResult" type="s1:ZzrfcmxdiTpPagAbonoFacturaResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZzrfcmxdiTpPagCartolaDiV2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="param" type="s1:ZzrfcmxdiTpPagCartolaDiV2" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZzrfcmxdiTpPagCartolaDiV2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZzrfcmxdiTpPagCartolaDiV2Result" type="s1:ZzrfcmxdiTpPagCartolaDiV2Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZzrfcmxdiTpPagDoctoFi">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="param" type="s1:ZzrfcmxdiTpPagDoctoFi" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZzrfcmxdiTpPagDoctoFiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZzrfcmxdiTpPagDoctoFiResult" type="s1:ZzrfcmxdiTpPagDoctoFiResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZzrfcmxdiTpPagPagoDj">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="param" type="s1:ZzrfcmxdiTpPagPagoDj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZzrfcmxdiTpPagPagoDjResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZzrfcmxdiTpPagPagoDjResult" type="s1:ZzrfcmxdiTpPagPagoDjResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZzrfcmxdiTpPagPedidoV2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="param" type="s1:ZzrfcmxdiTpPagPedidoV2" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZzrfcmxdiTpPagPedidoV2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZzrfcmxdiTpPagPedidoV2Result" type="s1:ZzrfcmxdiTpPagPedidoV2Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style">
+      <s:import namespace="urn:sap-com:document:sap:rfc:functions" />
+      <s:complexType name="ZzrfcmxdiTpIntAbonoFactura">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ICanal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ICodcliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IDoccomercial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IMontopago" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IOrgvta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ISector" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZzrfcmxdiTpIntAbonoFacturaResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ORetorno" type="s2:ZRFCRETURN" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZzrfcmxdiTpIntCartolaDiV2">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ICanal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ICodcliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IDoccomercial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IMontopago" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IOrgvta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ISector" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ISemaforo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZzrfcmxdiTpIntCartolaDiV2Response">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ORetorno" type="s2:ZRFCRETURN" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZzrfcmxdiTpIntDoctoFi">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ICanal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ICodcliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IMontopago" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IOrgvta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ISector" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ITPagoDoctoFi" type="s1:ArrayOfZESMXDI_DOCTO_FI" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfZESMXDI_DOCTO_FI">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" form="unqualified" name="item" type="s2:ZESMXDI_DOCTO_FI" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZzrfcmxdiTpIntDoctoFiResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ITPagoDoctoFi" type="s1:ArrayOfZESMXDI_DOCTO_FI" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ORetorno" type="s2:ZRFCRETURN" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZzrfcmxdiTpIntPagoDj">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IAno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ICanal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ICodcliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IMes" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IMesant" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IOrgvta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IPeriodo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ISector" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ITCantDec" type="s1:ArrayOfZSSD_CANTIDAD_DECLARADA" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfZSSD_CANTIDAD_DECLARADA">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" form="unqualified" name="item" type="s2:ZSSD_CANTIDAD_DECLARADA" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZzrfcmxdiTpIntPagoDjResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ITCantDec" type="s1:ArrayOfZSSD_CANTIDAD_DECLARADA" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ORetorno" type="s2:ZRFCRETURN" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZzrfcmxdiTpIntPedidoV2">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ICanal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ICodcliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IDoccomercial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IMontoChequeDia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IMontoChequeTercero" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IMontoEfectivo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IOrgvta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ISector" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ITChequesAFecha" type="s1:ArrayOfZESMXDI_CARTOLA_DI_CHAF" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfZESMXDI_CARTOLA_DI_CHAF">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" form="unqualified" name="item" type="s2:ZESMXDI_CARTOLA_DI_CHAF" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZzrfcmxdiTpIntPedidoV2Response">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ITChequesAFecha" type="s1:ArrayOfZESMXDI_CARTOLA_DI_CHAF" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ORetorno" type="s2:ZRFCRETURN" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZzrfcmxdiTpObtToken">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ICanal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ICodcliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IIdbanco" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IMonto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IOrgvta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ISector" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ITipo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZzrfcmxdiTpObtTokenResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ORetorno" type="s2:ZRFCRETURN" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="OToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZzrfcmxdiTpPagAbonoFactura">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ICodcliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IDoccomercial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IPagobanco" type="s2:ZESMXDI_BANCO" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZzrfcmxdiTpPagAbonoFacturaResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="OBelnr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="OBukrs" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="OGjahr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ORetorno" type="s2:ZRFCRETURN" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZzrfcmxdiTpPagCartolaDiV2">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ICodcliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IDoccomercial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IPagobanco" type="s2:ZESMXDI_BANCO" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZzrfcmxdiTpPagCartolaDiV2Response">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="OBelnr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="OBukrs" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="OGjahr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ORetorno" type="s2:ZRFCRETURN" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZzrfcmxdiTpPagDoctoFi">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ICodcliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IPagobanco" type="s2:ZESMXDI_BANCO" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZzrfcmxdiTpPagDoctoFiResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="OBelnr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="OBukrs" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="OGjahr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ORetorno" type="s2:ZRFCRETURN" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZzrfcmxdiTpPagPagoDj">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ICodcliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IPagobanco" type="s2:ZESMXDI_BANCO" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZzrfcmxdiTpPagPagoDjResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="OBelnr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="OBukrs" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="OGjahr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ORetorno" type="s2:ZRFCRETURN" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZzrfcmxdiTpPagPedidoV2">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ICodcliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IDoccomercial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IPagobanco" type="s2:ZESMXDI_BANCO" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZzrfcmxdiTpPagPedidoV2Response">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="OBelnr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="OBukrs" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="OGjahr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="ORetorno" type="s2:ZRFCRETURN" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:rfc:functions">
+      <s:complexType name="ZRFCRETURN">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="RETORNO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="MENSAJE" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZESMXDI_DOCTO_FI">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="MONTO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="BUKRS" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="GJAHR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="BELNR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="BUZEI" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZSSD_CANTIDAD_DECLARADA">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="MATNR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="CANTDEC" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZESMXDI_CARTOLA_DI_CHAF">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="VBELN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="PAISBANCO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="BANCO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="NOMBANCO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="CUENTABANCO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="NUMERO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="FECHA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="MONTO" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZESMXDI_BANCO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="IDBANCO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="COD_AUTORIZACION" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="MONTO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="FECHATX" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="HORATX" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="FECHACONT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="UNIQUEID" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ZzrfcmxdiTpIntAbonoFacturaSoapIn">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpIntAbonoFactura" />
+  </wsdl:message>
+  <wsdl:message name="ZzrfcmxdiTpIntAbonoFacturaSoapOut">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpIntAbonoFacturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZzrfcmxdiTpIntCartolaDiV2SoapIn">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpIntCartolaDiV2" />
+  </wsdl:message>
+  <wsdl:message name="ZzrfcmxdiTpIntCartolaDiV2SoapOut">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpIntCartolaDiV2Response" />
+  </wsdl:message>
+  <wsdl:message name="ZzrfcmxdiTpIntDoctoFiSoapIn">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpIntDoctoFi" />
+  </wsdl:message>
+  <wsdl:message name="ZzrfcmxdiTpIntDoctoFiSoapOut">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpIntDoctoFiResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZzrfcmxdiTpIntPagoDjSoapIn">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpIntPagoDj" />
+  </wsdl:message>
+  <wsdl:message name="ZzrfcmxdiTpIntPagoDjSoapOut">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpIntPagoDjResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZzrfcmxdiTpIntPedidoV2SoapIn">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpIntPedidoV2" />
+  </wsdl:message>
+  <wsdl:message name="ZzrfcmxdiTpIntPedidoV2SoapOut">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpIntPedidoV2Response" />
+  </wsdl:message>
+  <wsdl:message name="ZzrfcmxdiTpObtTokenSoapIn">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpObtToken" />
+  </wsdl:message>
+  <wsdl:message name="ZzrfcmxdiTpObtTokenSoapOut">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpObtTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZzrfcmxdiTpPagAbonoFacturaSoapIn">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpPagAbonoFactura" />
+  </wsdl:message>
+  <wsdl:message name="ZzrfcmxdiTpPagAbonoFacturaSoapOut">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpPagAbonoFacturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZzrfcmxdiTpPagCartolaDiV2SoapIn">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpPagCartolaDiV2" />
+  </wsdl:message>
+  <wsdl:message name="ZzrfcmxdiTpPagCartolaDiV2SoapOut">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpPagCartolaDiV2Response" />
+  </wsdl:message>
+  <wsdl:message name="ZzrfcmxdiTpPagDoctoFiSoapIn">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpPagDoctoFi" />
+  </wsdl:message>
+  <wsdl:message name="ZzrfcmxdiTpPagDoctoFiSoapOut">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpPagDoctoFiResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZzrfcmxdiTpPagPagoDjSoapIn">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpPagPagoDj" />
+  </wsdl:message>
+  <wsdl:message name="ZzrfcmxdiTpPagPagoDjSoapOut">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpPagPagoDjResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZzrfcmxdiTpPagPedidoV2SoapIn">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpPagPedidoV2" />
+  </wsdl:message>
+  <wsdl:message name="ZzrfcmxdiTpPagPedidoV2SoapOut">
+    <wsdl:part name="parameters" element="tns:ZzrfcmxdiTpPagPedidoV2Response" />
+  </wsdl:message>
+  <wsdl:portType name="MatrixDITrazaPagosWebServSoap">
+    <wsdl:operation name="ZzrfcmxdiTpIntAbonoFactura">
+      <wsdl:input message="tns:ZzrfcmxdiTpIntAbonoFacturaSoapIn" />
+      <wsdl:output message="tns:ZzrfcmxdiTpIntAbonoFacturaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpIntCartolaDiV2">
+      <wsdl:input message="tns:ZzrfcmxdiTpIntCartolaDiV2SoapIn" />
+      <wsdl:output message="tns:ZzrfcmxdiTpIntCartolaDiV2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpIntDoctoFi">
+      <wsdl:input message="tns:ZzrfcmxdiTpIntDoctoFiSoapIn" />
+      <wsdl:output message="tns:ZzrfcmxdiTpIntDoctoFiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpIntPagoDj">
+      <wsdl:input message="tns:ZzrfcmxdiTpIntPagoDjSoapIn" />
+      <wsdl:output message="tns:ZzrfcmxdiTpIntPagoDjSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpIntPedidoV2">
+      <wsdl:input message="tns:ZzrfcmxdiTpIntPedidoV2SoapIn" />
+      <wsdl:output message="tns:ZzrfcmxdiTpIntPedidoV2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpObtToken">
+      <wsdl:input message="tns:ZzrfcmxdiTpObtTokenSoapIn" />
+      <wsdl:output message="tns:ZzrfcmxdiTpObtTokenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpPagAbonoFactura">
+      <wsdl:input message="tns:ZzrfcmxdiTpPagAbonoFacturaSoapIn" />
+      <wsdl:output message="tns:ZzrfcmxdiTpPagAbonoFacturaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpPagCartolaDiV2">
+      <wsdl:input message="tns:ZzrfcmxdiTpPagCartolaDiV2SoapIn" />
+      <wsdl:output message="tns:ZzrfcmxdiTpPagCartolaDiV2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpPagDoctoFi">
+      <wsdl:input message="tns:ZzrfcmxdiTpPagDoctoFiSoapIn" />
+      <wsdl:output message="tns:ZzrfcmxdiTpPagDoctoFiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpPagPagoDj">
+      <wsdl:input message="tns:ZzrfcmxdiTpPagPagoDjSoapIn" />
+      <wsdl:output message="tns:ZzrfcmxdiTpPagPagoDjSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpPagPedidoV2">
+      <wsdl:input message="tns:ZzrfcmxdiTpPagPedidoV2SoapIn" />
+      <wsdl:output message="tns:ZzrfcmxdiTpPagPedidoV2SoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MatrixDITrazaPagosWebServSoap" type="tns:MatrixDITrazaPagosWebServSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ZzrfcmxdiTpIntAbonoFactura">
+      <soap:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpIntAbonoFactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpIntCartolaDiV2">
+      <soap:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpIntCartolaDiV2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpIntDoctoFi">
+      <soap:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpIntDoctoFi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpIntPagoDj">
+      <soap:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpIntPagoDj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpIntPedidoV2">
+      <soap:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpIntPedidoV2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpObtToken">
+      <soap:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpObtToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpPagAbonoFactura">
+      <soap:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpPagAbonoFactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpPagCartolaDiV2">
+      <soap:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpPagCartolaDiV2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpPagDoctoFi">
+      <soap:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpPagDoctoFi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpPagPagoDj">
+      <soap:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpPagPagoDj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpPagPedidoV2">
+      <soap:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpPagPedidoV2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MatrixDITrazaPagosWebServSoap12" type="tns:MatrixDITrazaPagosWebServSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ZzrfcmxdiTpIntAbonoFactura">
+      <soap12:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpIntAbonoFactura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpIntCartolaDiV2">
+      <soap12:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpIntCartolaDiV2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpIntDoctoFi">
+      <soap12:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpIntDoctoFi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpIntPagoDj">
+      <soap12:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpIntPagoDj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpIntPedidoV2">
+      <soap12:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpIntPedidoV2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpObtToken">
+      <soap12:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpObtToken" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpPagAbonoFactura">
+      <soap12:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpPagAbonoFactura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpPagCartolaDiV2">
+      <soap12:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpPagCartolaDiV2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpPagDoctoFi">
+      <soap12:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpPagDoctoFi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpPagPagoDj">
+      <soap12:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpPagPagoDj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZzrfcmxdiTpPagPedidoV2">
+      <soap12:operation soapAction="http://webservice.gasco.cl/WSMatrixDI/ZzrfcmxdiTpPagPedidoV2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MatrixDITrazaPagosWebServ">
+    <wsdl:port name="MatrixDITrazaPagosWebServSoap" binding="tns:MatrixDITrazaPagosWebServSoap">
+      <soap:address location="http://webservices.gasco.cl/WSMatrixDI/MatrixDITrazaPagosWebServ.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MatrixDITrazaPagosWebServSoap12" binding="tns:MatrixDITrazaPagosWebServSoap12">
+      <soap12:address location="http://webservices.gasco.cl/WSMatrixDI/MatrixDITrazaPagosWebServ.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

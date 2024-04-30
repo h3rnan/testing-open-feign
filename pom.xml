@@ -83,7 +83,7 @@
 				</dependencies>
 				<executions>
 					<execution>
-						<id>dataaccess</id>
+						<id>data-access</id>
 						<goals>
 							<goal>generate</goal>
 						</goals>
@@ -98,7 +98,7 @@
 						</configuration>
 					</execution>
 					<execution>
-						<id>matrixdi</id>
+						<id>matrix-di</id>
 						<goals>
 							<goal>generate</goal>
 						</goals>
@@ -113,7 +113,7 @@
 						</configuration>
 					</execution>
 					<execution>
-						<id>wswebpaygasco</id>
+						<id>webpay-gasco</id>
 						<goals>
 							<goal>generate</goal>
 						</goals>
@@ -125,6 +125,24 @@
 							<cleanPackageDirectories>false</cleanPackageDirectories>
 							<generateDirectory>${project.build.directory}/generated-sources/gasco/webpay</generateDirectory>
 							<generatePackage>cl.gascox.integracion.app.wsclients.wswebpaygasco</generatePackage>
+						</configuration>
+					</execution>
+					<execution>
+						<id>mxdi-traza-pagos</id>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+						<configuration>
+							<args>
+								<arg>-XautoNameResolution</arg>
+							</args>
+							<schemaDirectory>${project.basedir}/src/main/resources/schema/gasco/mxditrazapagos</schemaDirectory>
+							<schemaIncludes>
+								<include>MatrixDITrazaPagosWebServ.wsdl</include>
+							</schemaIncludes>
+							<cleanPackageDirectories>false</cleanPackageDirectories>
+							<generateDirectory>${project.build.directory}/generated-sources/gasco/mxditrazapagos</generateDirectory>
+							<generatePackage>cl.gascox.integracion.app.wsclients.mxditrazapagos</generatePackage>
 						</configuration>
 					</execution>
 				</executions>
